@@ -30,10 +30,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F  &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SQT   &trans
-&trans  &kp A  &kp R  &kp S  &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O     &trans
-&trans  &kp Z  &kp X  &kp C  &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &mo 2  &mo 3  &kp SPACE    &kp RET  &mo 1  &mo 2
+&trans  &kp Q  &kp W  &kp F           &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SQT   &trans
+&trans  &kp A  &kp R  &kp S           &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O     &trans
+&trans  &kp Z  &kp X  &kp C           &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &kp LEFT_SHIFT  &mo 3  &kp SPACE    &kp RET  &mo 1  &mo 2
             >;
         };
 
@@ -60,18 +60,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE   &kp K_COPY     &kp K_CUT    &kp HOME       &kp K_UNDO  &kp TAB       &kp PRINTSCREEN  &trans
-&trans  &kp PIPE              &kp COLON          &kp DOUBLE_QUOTES  &kp QUESTION      &kp K_PASTE    &kp TAB      &kp BACKSPACE  &kp DELETE  &kt LEFT_ALT  &kt LEFT_SHIFT   &trans
-&trans  &kp NON_US_BACKSLASH  &kp SEMICOLON      &kp LESS_THAN      &kp GREATER_THAN  &kp K_CUT      &kp K_PASTE  &kp END        &kp K_REDO  &kt LCTRL     &kp LEFT_WIN     &trans
-                                                 &trans             &trans            &trans         &trans       &trans         &trans
+&trans  &trans        &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE   &kp K_COPY    &kp K_COPY   &kp HOME       &kp K_UNDO  &trans     &kp PRINTSCREEN  &trans
+&trans  &kp LEFT_ALT  &kp COLON          &kp DOUBLE_QUOTES  &kp QUESTION      &kp TAB       &kp K_PASTE  &kp BACKSPACE  &kp DELETE  &trans     &kt LEFT_SHIFT   &trans
+&trans  &trans        &kp SEMICOLON      &kp LESS_THAN      &kp GREATER_THAN  &kp K_CUT     &kp K_CUT    &kp END        &kp K_REDO  &sk LCTRL  &kp LEFT_WIN     &trans
+                                         &trans             &trans            &trans        &trans       &trans         &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp ESCAPE  &kp LS(LC(T))  &kp LC(W)        &kp LC(T)    &trans    &bt BT_CLR_ALL  &trans        &trans        &trans        &kp LA(F4)  &trans
-&trans  &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT    &trans    &bt BT_CLR      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans      &trans
-&trans  &trans      &trans         &kp LS(LC(TAB))  &kp LC(TAB)  &trans    &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
+&trans  &kp ESCAPE  &kp LS(LC(T))  &kp LC(W)        &kp LC(T)    &trans    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans
+&trans  &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT    &trans    &bt BT_CLR      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
+&trans  &trans      &kp LA(F4)     &kp LS(LC(TAB))  &kp LC(TAB)  &trans    &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
                                    &trans           &trans       &trans    &trans          &trans        &trans
             >;
         };
