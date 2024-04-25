@@ -60,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans        &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE   &kp K_COPY    &kp K_COPY   &kp HOME       &kp K_UNDO  &trans     &kp PRINTSCREEN  &trans
-&trans  &kp LEFT_ALT  &kp COLON          &kp DOUBLE_QUOTES  &kp QUESTION      &kp TAB       &kp K_PASTE  &kp BACKSPACE  &kp DELETE  &trans     &kt LEFT_SHIFT   &trans
-&trans  &trans        &kp SEMICOLON      &kp LESS_THAN      &kp GREATER_THAN  &kp K_CUT     &kp K_CUT    &kp END        &kp K_REDO  &sk LCTRL  &kp LEFT_WIN     &trans
-                                         &trans             &trans            &trans        &trans       &trans         &trans
+&trans  &trans        &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE   &trans     &kp K_COPY   &kp HOME       &kp K_UNDO  &trans     &kp PRINTSCREEN  &trans
+&trans  &kp LEFT_ALT  &kp COLON          &kp DOUBLE_QUOTES  &kp QUESTION      &kp TAB    &kp K_PASTE  &kp BACKSPACE  &kp DELETE  &trans     &kt LEFT_SHIFT   &trans
+&trans  &kp LS(B)     &kp SEMICOLON      &kp LESS_THAN      &kp GREATER_THAN  &kp B      &kp K_CUT    &kp END        &kp K_REDO  &sk LCTRL  &kp LEFT_WIN     &trans
+                                         &trans             &trans            &trans     &trans       &trans         &trans
             >;
         };
 
