@@ -59,19 +59,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE   &kp CAPS          &kp K_COPY   &kp HOME       &kp K_UNDO  &kp LS(LA(TAB))  &kp PRINTSCREEN  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE   &sk LCTRL         &kp K_COPY   &kp HOME       &kp K_UNDO  &kp LS(LA(TAB))  &kp PRINTSCREEN  &trans
 &trans  &kp PIPE          &kp COLON          &kp DOUBLE_QUOTES  &kp QUESTION      &sk LEFT_SHIFT    &kp K_PASTE  &kp BACKSPACE  &kp DELETE  &kp LA(TAB)      &kp LEFT_ALT     &trans
-&trans  &kp BACKSLASH     &kp SEMICOLON      &kp LESS_THAN      &kp GREATER_THAN  &sk LCTRL         &kp K_CUT    &kp END        &kp K_REDO  &kp ESCAPE       &kp LEFT_WIN     &trans
+&trans  &kp BACKSLASH     &kp SEMICOLON      &kp LESS_THAN      &kp GREATER_THAN  &kp CAPS          &kp K_CUT    &kp END        &kp K_REDO  &kp ESCAPE       &kp LEFT_WIN     &trans
                                              &trans             &trans            &trans            &trans       &trans         &trans
             >;
         };
 
         Misc {
             bindings = <
-&trans  &trans    &kp LS(LC(T))  &kp LC(W)        &kp LC(T)    &kp LA(Y)    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans
-&trans  &kp LEFT  &kp DOWN       &kp UP           &kp RIGHT    &kp LA(M)    &bt BT_CLR      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
-&trans  &trans    &kp LA(F4)     &kp LS(LC(TAB))  &kp LC(TAB)  &trans       &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
-                                 &trans           &trans       &trans       &trans          &trans        &trans
+&trans  &kp V      &kp LS(LC(T))  &kp LC(W)        &kp LC(T)    &kp LA(Y)    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans
+&trans  &kp LEFT   &kp DOWN       &kp UP           &kp RIGHT    &kp LA(M)    &bt BT_CLR      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
+&trans  &kp LS(V)  &kp LA(F4)     &kp LS(LC(TAB))  &kp LC(TAB)  &trans       &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+                                  &trans           &trans       &trans       &trans          &trans        &trans
             >;
         };
     };
