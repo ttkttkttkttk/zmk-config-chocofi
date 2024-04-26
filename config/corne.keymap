@@ -9,7 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Capslock {
+            bindings = <&kp CAPS>;
+            key-positions = <25 34>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -22,10 +29,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F  &kp P           &kp B        &kp J    &kp L  &kp U      &kp Y    &mt LEFT_CONTROL SQT  &trans
-&trans  &kp A  &kp R  &kp S  &kp T           &kp G        &kp M    &kp N  &kp E      &kp I    &kp O                 &trans
-&trans  &kp Z  &kp X  &kp C  &kp D           &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH              &trans
-                      &mo 3  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &mo 1  &mo 2
+&trans  &kp Q           &kp W           &kp F             &kp P        &kp B        &kp J            &kp L        &kp U             &kp Y           &kp SQT         &trans
+&trans  &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T  &kp G        &kp M            &mt LCTRL N  &mt LEFT_SHIFT E  &mt LEFT_ALT I  &mt LEFT_WIN O  &trans
+&trans  &kp Z           &kp X           &kp C             &kp D        &kp V        &kp K            &kp H        &kp COMMA         &kp DOT         &kp FSLH        &trans
+                                        &mo 3             &lt 1 SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &lt 1 ENTER  &lt 3 DELETE
             >;
         };
 
@@ -37,10 +44,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp V      &kp LS(LC(T))  &kp LC(W)        &kp LC(T)       &kp LA(Y)    &kp K_COPY   &kp HOME       &kp K_UNDO  &kp ESCAPE   &kp LEFT_CONTROL  &trans
-&trans  &kp LEFT   &kp DOWN       &kp UP_ARROW     &kp RIGHT       &kp LA(M)    &kp K_PASTE  &kp BACKSPACE  &kp DELETE  &kp TAB      &kp LEFT_ALT      &trans
-&trans  &kp LS(V)  &kp F4         &kp LS(LC(TAB))  &kp LC(TAB)     &kp CAPS     &kp K_CUT    &kp END        &kp K_REDO  &kp LS(TAB)  &kp LEFT_WIN      &trans
-                                  &trans           &kp LEFT_SHIFT  &trans       &trans       &trans         &trans
+&trans  &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp HOME   &kp V         &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans        &trans
+&trans  &kp LEFT  &kp DOWN           &kp UP           &kp RIGHT  &kp ESCAPE    &trans                &kp LCTRL             &kp LEFT_SHIFT   &kp LEFT_ALT       &kp LEFT_WIN  &trans
+&trans  &trans    &kp F4             &kp PRINTSCREEN  &kp END    &kp CAPS      &kp C_BRI_UP          &kp C_BRI_DN          &kp C_BRI_INC    &kp C_BRI_DN       &trans        &trans
+                                     &trans           &trans     &trans        &trans                &trans                &trans
             >;
         };
 
@@ -52,19 +59,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp RIGHT_PARENTHESIS  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans    &kp PLUS   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &trans
-&trans  &kp COLON              &kp DOLLAR       &kp PERCENT   &kp CARET             &trans    &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH     &trans
-&trans  &kp SEMICOLON          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
-                                                &trans        &trans                &trans    &trans     &trans        &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp AMPERSAND        &kp ASTERISK            &kp LEFT_PARENTHESIS  &trans    &kp PLUS   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &trans
+&trans  &mt LEFT_WIN COLON     &mt LEFT_ALT DOLLAR  &mt LEFT_SHIFT PERCENT  &mt LCTRL CARET       &trans    &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH     &trans
+&trans  &kp SEMICOLON          &kp EXCLAMATION      &kp AT_SIGN             &kp HASH              &trans    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
+                                                    &trans                  &trans                &trans    &trans     &trans        &trans
             >;
         };
 
         Misc {
             bindings = <
-&trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp PRINTSCREEN    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans
-&trans  &kp LEFT_WIN          &trans             &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans             &bt BT_CLR      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
-&trans  &kp NON_US_BACKSLASH  &kp PIPE           &kp GRAVE          &kp TILDE        &trans             &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
-                                                 &trans             &trans           &trans             &trans          &trans        &trans
+&trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans
+&trans  &trans                &trans             &trans          &trans           &trans    &bt BT_CLR      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
+&trans  &kp NON_US_BACKSLASH  &kp PIPE           &kp GRAVE       &kp TILDE        &trans    &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+                                                 &trans          &trans           &trans    &trans          &trans        &trans
             >;
         };
     };
