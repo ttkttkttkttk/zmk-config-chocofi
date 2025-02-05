@@ -17,6 +17,11 @@
             bindings = <&kp CAPS>;
             key-positions = <25 34>;
         };
+
+        minecraft {
+            bindings = <&tog 4>;
+            key-positions = <36 41>;
+        };
     };
 
     behaviors {
@@ -84,6 +89,15 @@
 &trans  &trans                &trans             &trans          &trans           &trans    &bt BT_CLR      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
 &trans  &kp NON_US_BACKSLASH  &kp PIPE           &kp GRAVE       &kp TILDE        &trans    &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
                                                  &trans          &trans           &trans    &trans          &trans        &trans
+            >;
+        };
+
+        minecraft {
+            bindings = <
+&trans  &kp N1     &kp N2  &kp N3  &kp N4     &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB    &kp Q   &kp W   &kp E      &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp A   &kp S   &kp D      &kp F     &trans  &kp F2  &kp F3  &kp F5  &trans  &trans
+                           &trans  &kp SPACE  &trans    &trans  &trans  &trans
             >;
         };
     };
