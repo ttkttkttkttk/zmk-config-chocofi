@@ -94,10 +94,10 @@
 
         minecraft {
             bindings = <
-&trans  &kp N1     &kp N2  &kp N3  &kp N4     &kp N5        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1     &kp N2  &kp N3  &kp N4     &kp J         &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp TAB    &kp Q   &kp W   &kp E      &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LSHFT  &kp A   &kp S   &kp D      &kp F         &trans  &kp F2  &kp F3  &kp F5  &trans  &trans
-                           &trans  &kp SPACE  &trans        &trans  &trans  &trans
+                           &trans  &kp SPACE  &kp I         &trans  &trans  &trans
             >;
         };
     };
